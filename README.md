@@ -15,5 +15,10 @@ HTML5, CSS3, JS, Jquery.
 
 ## Change Log
 04-21-2018 4:15pm - Began timed challenge. 
+04-21-2018 4:43pm - Have HTML set up.
+
+
 
 ## Credits and Collaborations
+https://www.w3schools.com/html/html_forms.asp
+https://css-tricks.com/css-sprites/
