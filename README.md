@@ -23,3 +23,5 @@ HTML5, CSS3, JS, Jquery.
 https://www.w3schools.com/html/html_forms.asp
 https://css-tricks.com/css-sprites/
 https://stackoverflow.com/questions/4137255/checkboxes-in-web-pages-how-to-make-them-bigger?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa 
+https://www.w3schools.com/jquery/jquery_css.asp
+https://www.w3schools.com/jquery/event_hover.asp
