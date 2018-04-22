@@ -10,24 +10,25 @@ $('body').css({'display': 'block',
   'padding': '20px',
   'margin-left': '40px'});
 
-$('input[type=checkbox]').css({'display': 'none'});
-$('input[type=radio]').css({'display': 'none'});
+$('input[type=checkbox]').css({'opacity': '0'});
+$('input[type=radio]').css({'opacity': '0'});
 
 $('input[type="checkbox"] + label.checkbox').css({'display':'inline-block',
   'cursor': 'pointer',
   'outline': '0',
-  'width': '80px',
-  'height': '80px',
+  'width': '200px',
+  'height': '200px',
   'background-image': 'url("form-elements-sprite.png")',
   'background-repeat': 'no-repeat',
   'background-position': '0 0'});
 
 
-let changePic = function (){
-  $('input[type="checkbox"] + label.checkbox').css({'background-position': '-400 bottom'});
+let changeCheckbox = function (){
+  $('input[type="checkbox"] + label.checkbox').css({'background-position': '-230 0'});
+  console.log('clicked');
 };
 
-$(document).on('click','#sprite-checkbox', changePic);
+$('input[type="checkbox"] + .checkbox').on('click', changeCheckbox);
 
 
 $('input[type="radio"] + label.radio').css({'display':'inline-block',
@@ -39,7 +40,13 @@ $('input[type="radio"] + label.radio').css({'display':'inline-block',
   'background-repeat': 'no-repeat',
   'background-position': '-420 0'});
 
-$('input[type="radio"]:checked + label.radio:after').css({'background-position': '-500 bottom'});
+let changeRadio = function (){
+  $('input[type="radio"] + label.radio').css({'background-position': '-650 bottom'});
+  console.log('clicked');
+};
+
+$('input[type="radio"] + .radio').on('click', changeRadio);
+
 
 $('button').css({'height': '60px',
   'width': '100px'});
