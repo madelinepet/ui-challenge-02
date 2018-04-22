@@ -1,0 +1,51 @@
+html{
+  width: 1000px;
+}
+h1{
+  margin-left: 250px;
+  display: block;
+  text-decoration: underline;
+}
+body{
+  display: block;
+  position: relative;
+  padding: 20px;
+  margin-left: 40px;
+}
+input[type=checkbox]{
+  display: none;
+}
+input[type=radio]{
+  display: none;
+}
+input[type="checkbox"] + label.checkbox{
+  display:inline-block;
+  cursor: pointer;
+  outline: 0;	
+  width: 80px;
+  height: 80px;
+  background-image: url("form-elements-sprite.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+#checkBox input[type="checkbox"]:checked + label.checkbox:after{background-position: -100 bottom;}
+
+input[type="radio"] + label.radio{
+  display:inline-block;
+  cursor: pointer;
+  outline: 0;	
+  width: 200px;
+  height: 200px;
+  background-image: url("form-elements-sprite.png");
+  background-repeat: no-repeat;
+  background-position: -420 0;
+}
+input[type="radio"]:checked + label.radio:after{background-position: -500 bottom;}
+
+button{
+  height: 60px;
+  width: 100px;  
+}
+button:hover{
+background-color: darkslategrey;
+}
