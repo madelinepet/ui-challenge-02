@@ -19,9 +19,16 @@ $('input[type="checkbox"] + label.checkbox').css({'display':'inline-block',
   'width': '80px',
   'height': '80px',
   'background-image': 'url("form-elements-sprite.png")',
-  'background-repeat': 'no-repeat'});
+  'background-repeat': 'no-repeat',
+  'background-position': '0 0'});
 
-$('#checkBox input[type="checkbox"]:checked + label.checkbox:after').css({'background-position': '-100 bottom'});
+
+let changePic = function (){
+  $('input[type="checkbox"] + label.checkbox').css({'background-position': '-400 bottom'});
+};
+
+$(document).on('click','#sprite-checkbox', changePic);
+
 
 $('input[type="radio"] + label.radio').css({'display':'inline-block',
   'cursor': 'pointer',
